@@ -24,7 +24,7 @@
     "sass": "^1.69",
     "sass-loader": "^12.1.0",
     "select2": "^4.0.13",
-    "tailwindcss": "3.1.8",
+    "tailwindcss": "^3.1.8",
     "tailwindcss-interaction-variants": "^5.0.0",
     "vite": "^3.0.2"
   }
