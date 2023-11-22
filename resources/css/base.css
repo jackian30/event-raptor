@@ -1,0 +1,44 @@
+@layer base {
+    h1, .h1 {
+        @apply text-xl md:text-2xl text-flower font-bold font-heading mt-2;
+    }
+
+    h2, .h2 {
+        @apply text-lg md:text-xl text-black font-bold font-heading;
+    }
+
+    h3, .h3 {
+        @apply text-base md:text-lg text-gray-800 font-semibold font-heading;
+    }
+
+    h4, .h4 {
+        @apply text-sm md:text-base text-gray-700 font-medium font-heading;
+    }
+
+    h5, .h5 {
+        @apply text-xs sm:text-sm text-gray-400 italic font-light font-heading;
+    }
+
+    h6, .h6 {
+        @apply text-xs sm:text-sm text-gray-400 font-light font-heading;
+    }
+
+    body, .body {
+        @apply text-sm  md:text-base;
+    }
+
+    p, .p {
+        @apply text-sm  md:text-base;
+    }
+
+    .dbug {
+        @apply border border-red box-border;
+    }
+
+    .header-background {
+        @apply w-full h-[84px] bg-cover bg-no-repeat;
+        /*@apply bg-gradient-to-b from-white via-footer/10 via-75% to-footer/40;*/
+        @apply bg-gradient-to-b from-white via-footer/10 to-footer/40;
+    }
+
+}

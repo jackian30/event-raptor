@@ -1,0 +1,263 @@
+@layer components {
+
+  input[type=checkout].form-control {
+    @apply
+    border-4 border-black px-3 py-3 text-gray-600 bg-white rounded text-sm shadow
+    focus:ring-blue-400 text-blue-500 border-gray-300 ;
+  }
+
+  .box {
+    @apply flex items-center content-center justify-center
+  }
+
+  .www-container {
+    @apply mx-auto max-w-[1920px] bg-white pb-10 rounded;
+    /*border border-gray-200 shadow-inner*/
+  }
+
+  .www-container-full {
+    @apply mx-auto bg-white pb-10 rounded;
+    /*border border-gray-200 shadow-inner*/
+  }
+
+  .preview_thumbnail {
+    @apply w-[240px] h-[150px] object-cover
+  }
+  .thumbnail {
+    @apply w-[100px] h-[56px] object-cover
+  }
+  .image {
+    /*@apply w-[900px] h-[507px] object-cover*/
+    @apply w-full h-full object-center object-cover
+  }
+  .image-xl {
+    /*@apply w-[600px] h-[338px] object-center object-cover*/
+    @apply w-[400px] h-[225px] object-center object-cover
+  }
+  .container-16-9 {
+    @apply aspect-w-16 aspect-h-9
+  }
+  .profile {
+    @apply max-w-[350px] max-h-[350px] object-center object-cover
+  }
+  .highlight_links a {
+    @apply text-blue-500 hover:text-blue-600 hover:underline;
+  }
+
+    .link {
+        @apply inline-block last:mr-0 mr-1 text-blue underline;
+    }
+
+    .thumbnail100x56-169 {
+        @apply aspect-w-16 aspect-h-9 w-[100px] h-[56px]
+    }
+
+    .thumbnail100x56 {
+        @apply w-[100px] h-[56px] object-cover
+    }
+
+    .show_featured-image {
+        @apply w-[300px] h-[169px] object-cover
+    }
+
+    .ck-editor,
+    .document-editor,
+    .ck-editor__editable {
+        @apply shadow-sm;
+    }
+
+    .ck.ck-editor {
+        @apply md:max-w-[99%] lg:w-auto;
+    }
+
+    .document-editor {
+        /*display: flex;*/
+        max-height: 500px;
+        flex-flow: column nowrap;
+        @apply flex border border-gray-200 rounded-sm;
+    }
+    .document-editor__toolbar {
+        z-index: 1;
+        @apply border-b border-gray-300;
+    }
+    .document-editor__toolbar .ck-toolbar {
+        /*border: 0;*/
+        /*border-radius: 0;*/
+        @apply bg-gray-200 border-0;
+    }
+    .ck-icon {
+        width: 16px;
+    }
+    .document-editor__editable-container {
+        @apply bg-gray-100 p-5 overflow-y-scroll;
+    }
+    .document-editor__editable-container .ck-editor__editable {
+        @apply
+        border border-gray-300 shadow-md
+        px-1 py-0 mx-auto max-w-[650px] min-h-[10rem]
+        bg-white text-blue-400;
+    }
+    .ck-heading-dropdown .ck-list .ck-button__label {
+        /*line-height: calc(*/
+        /*    1.7 * var(--ck-line-height-base) * var(--ck-font-size-base)*/
+        /*);*/
+        min-width: 6em;
+    }
+    .ck-heading-dropdown
+    .ck-list
+    .ck-button:not(.ck-heading_paragraph)
+    .ck-button__label {
+        transform: scale(0.8);
+        transform-origin: left;
+    }
+    .ck-content h2,
+    .ck-heading-dropdown .ck-heading_heading1 .ck-button__label {
+        font-size: 2.18em;
+        font-weight: normal;
+        @apply font-heading
+    }
+    .ck-content h2 {
+        @apply text-lg md:text-xl text-gray-900 font-bold font-heading pb-2;
+    }
+    .ck-content h3,
+    .ck-heading-dropdown .ck-heading_heading2 .ck-button__label {
+        font-size: 1.75em;
+        font-weight: normal;
+        color: hsl(203, 100%, 50%);
+    }
+    .ck-heading-dropdown .ck-heading_heading2.ck-on .ck-button__label {
+        @apply text-yellow-400;
+    }
+    .ck-content h3 {
+        @apply text-base md:text-lg text-gray-800 font-semibold font-heading;
+    }
+    .ck-content h4,
+    .ck-heading-dropdown .ck-heading_heading3 .ck-button__label {
+        font-size: 1.31em;
+        font-weight: bold;
+    }
+    .ck-content h4 {
+        @apply text-sm md:text-base text-gray-700 font-medium font-heading;
+    }
+    .ck-content ul {
+        @apply list-disc pb-4 pl-10;
+    }
+
+    .ck-content ol {
+        @apply list-decimal pb-4 pl-10;
+    }
+
+    .ck-content p {
+        @apply text-black text-sm md:text-base font-admin pb-2;
+        /*font-size: 1em;*/
+        /*line-height: 1.63em;*/
+        /*padding-top: 0.5em;*/
+        /*margin-bottom: 1.13em;*/
+    }
+    /*.ck-content blockquote {*/
+    /*    font-family: Georgia, serif;*/
+    /*    margin-left: calc(2 * var(--ck-spacing-large));*/
+    /*    margin-right: calc(2 * var(--ck-spacing-large));*/
+    /*}*/
+    /*}*/
+
+    .ck-content {
+        @apply text-black font-admin antialiased;
+    }
+
+    .ck-content a {
+        @apply underline text-blue-700;
+    }
+    /*.ck.ck-content {*/
+    /*    min-height: 250px;*/
+    /*&*/
+    .ck-editor__editable_inline {
+        @apply border border-gray-300;
+    }
+
+    .ck-content .image {
+        display: table;
+        clear: both;
+        text-align: center;
+        margin: .9em auto;
+    }
+
+    .ck-content .image img {
+        @apply block mx-auto max-w-full;
+        display: block;
+        /*min-width: 100%;*/
+    }
+
+    .ck-content .image-style-side {
+        @apply float-right max-w-[50%] sm:max-w-full pl-3;
+        max-width: 50%;
+    }
+
+    .ck-content .image-inline img, .ck-content .image-inline picture {
+        flex-grow: 1;
+        flex-shrink: 1;
+        max-width: 100%;
+    }
+
+    .ck-content .table {
+        border-color: inherit;
+        margin: .9em auto;
+        display: table;
+    }
+
+    .ck-content .table table th {
+        @apply text-left;
+    }
+
+    .ck-content .table table td, .ck-content .table table th {
+        min-width: 2em;
+        padding: .4em;
+        border: 1px solid #bfbfbf;
+    }
+
+    .ck-content .table table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 100%;
+        height: 100%;
+        border: 1px double #b3b3b3;
+    }
+
+    .ck-content figure.table {
+        @apply mx-auto;
+    }
+
+    .ck-content blockquote {
+        overflow: hidden;
+        padding-right: 1.5em;
+        padding-left: 1.5em;
+        margin-left: 0;
+        margin-right: 0;
+        font-style: italic;
+        border-left: 5px solid #ccc;
+    }
+
+    .ck.ck-word-count {
+        @apply text-sm mt-2;
+    }
+    .ck-word-count__words {
+        @apply inline mr-3;
+    }
+    .ck-word-count__characters {
+        @apply inline;
+    }
+
+   #search-field {
+     transition: width 0.5s ease-in-out, padding 0.5s ease-in-out;
+     width: 0;
+     padding: 0;
+     overflow: hidden;
+     border-radius: 0.375rem; /* This is 6px or 'rounded-md' in Tailwind */
+     border: 1px solid transparent;
+   }
+    #search-field.open {
+      width: 16rem; /* This is '64' in Tailwind */
+      padding: 0.5rem; /* This is '2' in Tailwind */
+    }
+
+}

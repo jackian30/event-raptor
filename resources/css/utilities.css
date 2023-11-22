@@ -1,0 +1,7 @@
+
+@layer utilities {
+    .link {
+        @apply underline text-blue;
+    }
+
+}
